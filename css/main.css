@@ -9,8 +9,11 @@ h1 {
 	margin-bottom: 10px;
 }
 
+p {
+	word-wrap: break-word;
+}
+
 header {
-    background: linear-gradient(rgba(94, 94, 94, .5), rgba(94, 94, 94, .5)), url('http://www.babson.edu/Academics/undergraduate/academic-programs/PublishingImages/san-franc.jpg') no-repeat center top;
     padding-top: 250px;
     background-attachment: relative;
     background-position: center center;
@@ -43,6 +46,21 @@ hr {
     max-width: 50px;
     border-color: #f05f40;
     border-width: 3px;
+}
+
+.header img {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    margin:auto; 
+    min-width:50%;
+    min-height:50%;
+	height:720px;
+	width:100%;
+	background: linear-gradient(rgba(94, 94, 94, .5), rgba(94, 94, 94, .5)), no-repeat center top;
+	z-index: -1;
 }
 
 hr.light {
@@ -166,22 +184,22 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(119,119,119,.7);
+        color: #fff;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: #000000;
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(119,119,119,.7);
+        color: #fff;
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+        color: #000000;
     }
 
     .navbar-default.affix {
@@ -319,43 +337,31 @@ aside {
     border-radius: 6px 0 6px 6px;
 }
 
-/****** Style Star Rating Widget *****/
+.stat {margin:1em 0 1.3em 1em;}
+.stat label {font-weight: bold;}
 
-p {
-	clear: both;
+#carousel-example-generic {
+	height: 75%;
+	
 }
 
-.rating { 
-  border: none;
-  float: left;
+img, .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+	height: 100%;
+	width: 50%;
+	margin: auto;
 }
 
-.rating > input { display: none; } 
-.rating > label:before { 
-  margin: 5px;
-  font-size: 1.25em;
-  font-family: FontAwesome;
-  content: "\2605";
+.carousel-control {
+	right: -15px;
 }
 
-.rating > .half:before { 
-  content: "\2605";
-  position: absolute;
+.item {
+	margin: auto;
+}
+.align-left {
+	
+	margin-left: 0;
 }
 
-.rating > label { 
- color: #ddd; 
- float: right; 
-}
 
-/***** CSS Magic to Highlight Stars on Hover *****/
-/* when removing disables, change final label color to #FFED85 */
 
-.rating > input:checked ~ label, /* show gold star when clicked */
-/* disabled for demo .rating:not(:checked) > label:hover, */ /* hover current star */
-/* disabled for demo .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-
-/* disabled for demo .rating > input:checked + label:hover, */ /* hover current star when changing rating */
-/* disabled for demo .rating > input:checked ~ label:hover,
-/* disabled for demo .rating > label:hover ~ input:checked ~ label, */ /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFD700;  } 

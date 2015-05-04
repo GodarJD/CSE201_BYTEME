@@ -13,6 +13,10 @@ p {
 	word-wrap: break-word;
 }
 
+#container-content:first-child {
+	margin-top: 50px;
+}
+
 header {
     padding-top: 250px;
     background-attachment: relative;
@@ -345,18 +349,22 @@ aside {
 	
 }
 
-img, .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+img, .carousel-inner>.item> a >img, .carousel-inner>.item>img {
 	height: 100%;
 	width: 50%;
 	margin: auto;
 }
 
-.carousel-control {
-	right: -15px;
+.carousel-control.right {
+	right: 100px;
 }
 
-.item {
-	margin: auto;
+.carousel-control.left {
+	left: 100px;
+}
+
+.carousel-inner > .item.active {
+	
 }
 .align-left {
 	

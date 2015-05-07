@@ -21,6 +21,7 @@ $(document).ready(function() {
         var email = $('#loginemail').val();
         alert('You are now logged in as ' email);
         $('#loginmodalclose').trigger('click');
+        $('#loginbutton').html(email);
     });
 
 });

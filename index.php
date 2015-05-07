@@ -116,7 +116,7 @@
 						<a class="page-scroll" href="#addapp">Add App</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#user" data-toggle="modal" data-target="#myModal">
+						<a class="page-scroll" href="#user" data-toggle="modal" data-target="#myModal" id="loginbutton">
 							Login/SignUp
 						</a>
 					</li>

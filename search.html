@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>App Bandit</title>
+
+	<link rel="stylesheet" href="pack/css1234.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="userstyle.php" media="all" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="pack/star-rating.js" type="text/javascript"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+
+	<!-- Plugin CSS -->
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand page-scroll" href="#page-top">App Bandit</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<form class="navbar-form navbar-left" role="search">
+        			<div class="form-group">
+          				<input type="text" class="form-control" id="search" placeholder="Search for apps">
+        			</div>
+      				</form>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sort <span class="caret"></span></a>
+						<ul class="dropdown-menu top-menu" role="menu">
+							<li><a href="#">App name</a>
+							</li>
+							<li><a href="#">App name (reverse alphabetical)</a>
+							</li>
+							<li><a href="#">Developer name</a>
+							</li>
+							<li><a href="#">Developer name (reverse alphabetical)</a>
+							</li>
+							<li><a href="#">Price (highest to lowest)</a>
+							</li>
+							<li><a href="#">Price (lowest to highest)</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Filters <span class="caret"></span></a>
+						<ul class="dropdown-menu multi-level top-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li class="dropdown-submenu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Rating</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>5 stars</li>
+									<li>4 stars</li>
+									<li>3 stars</li>
+									<li>2 stars</li>
+									<li>1 star</li>
+								</ul>
+							</li>
+							<li class="dropdown-submenu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Platforms</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+									<li>Web</li>
+									<li>iPhone/iPad</li>
+									<li>Android</li>
+									<li>Chrome Web Store</li>
+								</ul>
+							</li>
+							<li class="dropdown-submenu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Price</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+									<li>Free</li>
+									<li>Any price</li>
+									<li>$0.99+</li>
+									<li>$1.99+</li>
+									<li>$4.99+</li>
+									<li>$9.99+</li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<button class="btn btn-default" role="button" id="filterapply">
+								Apply
+							</button>
+						</ul>
+					</li>
+					<li>
+						<a class="page-scroll" href="#addapp">Add App</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#user" data-toggle="modal" data-target="#myModal">
+							Login/SignUp
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div class="container-fluid">
+
+	<!-- insert php here -->
+
+	</div>
+
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="js/mobilecheck.js"></script>
+
+	<script>
+		jQuery(document).ready(function() {
+			$("#input-21f").rating({
+				starCaptions: function(val) {
+					if (val < 3) {
+						return val;
+					} else {
+						return 'high';
+					}
+				},
+				starCaptionClasses: function(val) {
+					if (val < 3) {
+						return 'label label-danger';
+					} else {
+						return 'label label-success';
+					}
+				},
+				hoverOnClear: false
+			});
+
+			$('#rating-input').rating({
+				min: 0,
+				max: 5,
+				step: 1,
+				size: 'lg',
+				showClear: false
+			});
+
+			$('#btn-rating-input').on('click', function() {
+				$('#rating-input').rating('refresh', {
+					showClear: true,
+					disabled: true
+				});
+			});
+
+
+			$('.btn-danger').on('click', function() {
+				$("#kartik").rating('destroy');
+			});
+
+			$('.btn-success').on('click', function() {
+				console.log('class btn-success clicked and function called');
+				$("#kartik").rating('create');
+			});
+
+			$('#rating-input').on('rating.change', function() {
+				alert($('#rating-input').val());
+			});
+
+			$('.rb-rating').rating({
+				'showCaption': true,
+				'stars': '3',
+				'min': '0',
+				'max': '3',
+				'step': '1',
+				'size': 'xs',
+				'starCaptions': {
+					0: 'status:nix',
+					1: 'status:wackelt',
+					2: 'status:geht',
+					3: 'status:laeuft'
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

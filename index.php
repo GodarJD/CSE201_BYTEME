@@ -53,7 +53,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<form class="navbar-form navbar-left" role="search">
         			<div class="form-group">
-          				<input type="text" class="form-control" placeholder="Search">
+          				<input type="text" class="form-control" id="search" placeholder="Search for apps">
         			</div>
       				</form>
 					<li class="dropdown">
@@ -142,14 +142,14 @@
 							<h3>
 		 						Login
 	  						</h3>
-							<label for="email">Email address</label>
+							<label for="email" id="loginemail">Email address</label>
 							<input type="email" class="form-control" id="email" placeholder="Enter email">
 						</div>
 						<div class="form-group">
 							<label for="password">Password</label>
 							<input type="password" class="form-control" id="password" placeholder="Password">
 						</div>
-						<button type="submit" class="btn btn-success">Login</button>
+						<button type="submit" class="btn btn-success" id="loginsubmit">Login</button>
 					</form>
 					<form>
 						<div class="form-group">
@@ -167,7 +167,7 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal" id="loginmodalclose">Close</button>
 				</div>
 			</div>
 		</div>
@@ -243,9 +243,6 @@
 				<div class="caption1">
 					<h3>Zumper - Apartments for Rent </h3><span class="label label-default">Updated</span>  <span class="label label-success">Free</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Zumper is apartment renting made easy! Find and instantly apply to rent your dream home, apartment, or condominium across the country from San Francisco to New York, Boston, Chicago, and LA.</p>
 					<p>
 						<!-- Single button -->
@@ -262,7 +259,7 @@
 								</li>
 							</ul>
 						</div>
-						<a href="#" class="btn btn-default" role="button" data-toggle="tooltip" data-placement="top" title="Read the full description, and leave a rating and comment">Details</a>
+						<a href="appdetail.html" class="btn btn-default" role="button" data-toggle="tooltip" data-placement="top" title="Read the full description, and leave a rating and comment">Details</a>
 					</p>
 				</div>
 			</div>
@@ -273,9 +270,6 @@
 				<div class="caption">
 					<h3>Any.do </h3><span class="label label-default">Updated</span>  <span class="label label-success">Free</span>  <span class="label label-info">In-App Purchases</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Millions around the world use Any.do to capture ideas, things to do, and collaborate with the people around them. From planning your next vacation to organizing a big project at work or sharing a grocery list...</p>
 					<p>
 						<!-- Single button -->
@@ -305,9 +299,6 @@
 				<div class="caption">
 					<h3>Evernote </h3><span class="label label-default">Updated</span>  <span class="label label-success">Free</span>  <span class="label label-info">In-App Purchases</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>You’re on the path to something big — Evernote is where you do the work to achieve it. Write notes of all types, from short lists to lengthy research, and access them on any device. Collect web articles, handwritten notes...</p>
 					<p>
 						<!-- Single button -->
@@ -337,9 +328,6 @@
 				<div class="caption">
 					<h3>Memrise - Learn Languages Free </h3><span class="label label-primary">New</span>  <span class="label label-success">Free</span>  <span class="label label-info">In-App Purchases</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Meet your new Personal Memory Coach! Do you want to learn a new language, but are too busy to find the time? Have you always meant to improve your general knowledge but never quite get around to it?</p>
 					<p>
 						<!-- Single button -->
@@ -365,9 +353,6 @@
 				<div class="caption">
 					<h3>DocuSign - Sign & Send Docs </h3><span class="label label-default">Updated</span>  <span class="label label-success">Free</span>  <span class="label label-info">In-App Purchases</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Provides a simple and secure way to electronically sign documents and collect signatures from others. Eliminate the hassles, costs, and lack of security in printing, faxing, scanning, and overnighting documents for signature.</p>
 					<p>
 						<!-- Single button -->
@@ -398,9 +383,6 @@
 				<div class="caption">
 					<h3>Belly </h3><span class="label label-primary">New</span>  <span class="label label-success">Free</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Belly is a universal loyalty program that offers one-of-a-kind rewards at the businesses you love, replacing boring "Buy 10, Get 1 Free" punch cards with free stuff you actually want.</p>
 					<p>
 						<!-- Single button -->
@@ -433,9 +415,6 @@
 				<div class="caption">
 					<h3>Dubsmash </h3><span class="label label-default">Updated</span>  <span class="label label-success">Free</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Say it with video!
 						<br />1. Choose a famous sound
 						<br />2. Record a video on it
@@ -462,9 +441,6 @@
 				<div class="caption">
 					<h3>Learn C++ </h3><span class="label label-primary">New</span>  <span class="label label-success">Free</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Learn C++ is another FREE programming course by SoloLearn. Whether you've had any prior programming experience or not, this app will help you learn all you need to know in order to start.</p>
 					<p>
 						<!-- Single button -->
@@ -488,10 +464,7 @@
 				<div class="caption">
 					<h3>Luminosity</h3><span class="label label-default">Updated</span>  <span class="label label-success">Free</span>  <span class="label label-info">In-App Purchases</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
-					<p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+					<p>Train your memory and attention. Used by over 70 million people worldwide, Lumosity creates a Personalized Training Program that challenges your brain. Lumosity is designed by neuroscientists to train memory, attention, and more. With foundations in the study of neuroplasticity, Lumosity games are used in research, and have been incorporated into studies done by top scientists worldwide.</p>
 					<p>
 						<!-- Single button -->
 						<div class="btn-group">
@@ -518,9 +491,6 @@
 				<div class="caption">
 					<h3>Amazon Shopping </h3><span class="label label-default">Free</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Product Features
 						<br />* Customers are able to shop millions of products on any of Amazon's sites around the world from a single app
 						<br />* Quickly search, get product details, and read reviews on millions of products from Amazon and other merchants
@@ -552,8 +522,6 @@
 					<h3>Skype Qik: Group Video Chat </h3><span class="label label-primary">New</span>  <span class="label label-default">Free</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
 
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Introducing Skype Qik (say “quick”), a free* video messenger made for capturing moments and sharing laughs throughout your day. Set up a group and immediately start shooting and swapping videos. Send something to crack your friends up, or show off
 						a new dance move—whatever you want.</p>
 					<p>
@@ -583,9 +551,6 @@
 				<div class="caption">
 					<h3>Instacart</h3>  <span class="label label-primary">New</span>  <span class="label label-default">Free</span>
 					<input id="input-2c" class="rating" min="0" max="5" step="0.5" data-size="sm" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
-
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
 					<p>Create a grocery order with a few taps, from fresh fruit and vegetables, to meat, seafood and home essentials. Order from local grocery stores like Whole Foods Market, Petco or Costco and get your groceries delivered when you want them! Save time
 						and take back your weekends!</p>
 					<p>
@@ -611,17 +576,8 @@
 	</div>
 	<!-- end fluid container -->
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<!--   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<!-- <script src="js/main.js"></script> -->
-
-	<!-- Plugin JavaScript 
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/creative.js"></script> -->
 	<script src="js/mobilecheck.js"></script>
 
 	<script>

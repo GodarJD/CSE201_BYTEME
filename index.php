@@ -197,7 +197,7 @@
 	</div>
 	<div class="container-fluid" id="container-content">
 			<div class="alert alert-info" role="alert" class="admin user">You're logged in as an admin. <a href="#">Review your requests</a></div>
-			<div class="alert alert-info" role="alert" class="user">Want to submit an app? <a href="#">Submit an app</a></div>	
+			<div class="alert alert-info" role="alert" class="user">Want to submit an app? <a href="addapp.html">Submit an app</a></div>	
 <?php
 	
 	//DISPLAY APPS

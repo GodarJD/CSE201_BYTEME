@@ -24,6 +24,11 @@ $(document).ready(function() {
         $('#loginbutton').html(email);
     });
 
+    $('#appsubmit').on('click', function() {
+        alert("We'll review your app and get back to you soon!");
+        window.location.replace("index.php");
+    })
+
 });
 
 $(document).keypress(function(e) {
